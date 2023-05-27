@@ -1,0 +1,19 @@
+{
+  "name": "arijtask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "scss": "node-sass styles/scss/style.scss styles/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "lite-server": "^2.6.1",
+    "node-sass": "^9.0.0"
+  }
+}

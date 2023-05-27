@@ -1,0 +1,173 @@
+@import "./variables";
+
+.partion {
+  background-image: url("/images/crupled\ paper\ by\ freeject\ 2\ \(2\).png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 33px;
+  font-family: $almarai_font;
+
+  &-text {
+    padding-bottom: 80px;
+
+    &-header {
+      position: relative;
+
+      .content-tab {
+        &::after {
+          width: 50px;
+          height: 20px;
+          left: 78%;
+
+          @media (max-width: 992px) {
+            left: unset;
+          }
+        }
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 169.46%;
+      color: $balck;
+    }
+  }
+
+  &-button {
+    &_button {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 169.46%;
+      padding: 0 10px;
+      background: $red;
+      color: $white;
+      border: 1px solid $red;
+      border-radius: 6px;
+
+      &__icon {
+        border: 1px solid $white;
+        border-radius: 7px;
+        padding: 6px 10px;
+        background-color:$white;
+        margin: 10px;
+      }
+    }
+  }
+
+  &-description {
+    padding-top: 80px;
+  }
+
+  &-image {
+    padding-top: 18px;
+    width: 100%;
+
+    &-content {
+      width: 40%;
+      color: $balck;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 238.46%;
+      padding-top: 32px;
+      text-align: center;
+
+      @media (max-width: 775px) {
+        width: 100%;
+      }
+    }
+
+    &_img {
+      background-image: url("/images/box\ 1\ \(1\).png");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 2;
+      width: 100%;
+      height: 30rem;
+    }
+  }
+
+  &-petra {
+    background-image: url("/images/dark\ bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 332px;
+    font-family: "Almarai", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 169.46%;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    position: relative;
+    color: $white;
+    font-size: 17px;
+    line-height: 169.46%;
+    mix-blend-mode: normal;
+
+    .red-text {
+      color: $red;
+    }
+
+    &-text {
+      padding: 46px 0 24px;
+    }
+  }
+
+  &-content {
+    padding: 106px 0 28px 0;
+    font-size: 17px;
+    color: $balck;
+    line-height: 169.46%;
+  }
+
+  &-artical {
+    width: 100%;
+
+    &-content {
+      width: 40%;
+
+      @media (max-width: 775px) {
+        width: 100%;
+        padding-inline: 24px;
+      }
+
+      h4 {
+        padding-top: 30px;
+        color: $red;
+        font-size: 18px;
+        line-height: 238.46%;
+        font-weight: 700;
+
+        @media (max-width: 775px) {
+          padding-top: 60px;
+          line-height: 20px;
+        }
+      }
+
+      div {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 169.46%;
+        padding-top: 10px;
+
+        @media (max-width: 775px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-img {
+      background-image: url("/images/box3\ 1.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 2;
+      width: 100%;
+      height: 30rem;
+      padding-bottom: 40px;
+    }
+  }
+}

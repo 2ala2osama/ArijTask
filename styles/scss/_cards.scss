@@ -1,0 +1,192 @@
+@import './variables';
+.box-triangle {
+    position: relative;
+    font-family: $almarai_font;
+
+    &:not(:last-of-type) {
+        @media (max-width: 992px) {
+            margin-bottom: 14%;
+        }
+    }
+
+    .box-1 {
+        width: 200px;
+        height: 160px;
+        background-color: $white;
+        border: 1px solid $white;
+        border-radius: 10px;
+        position: absolute;
+        text-align: center;
+        left: 26px;
+        top: -40px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        color: $red;
+
+    }
+
+    .box-2 {
+        width: 240px;
+        height: 270px;
+        color: $white;
+        text-align: center;
+        background: $linear_red;
+        border: 1px solid $red;
+        border-radius: 9px;
+        font-family: $almarai_font;
+
+        &-content {
+            font-style: normal;
+            font-weight: 400;
+            padding: 7rem 6px 0 6px;
+
+            &_icons,
+            &_text,
+            &_number {
+                padding: 6px 8px;
+            }
+
+            &_number {
+                font-size: 25px;
+            }
+        }
+
+    }
+
+    .triangle {
+        display: inline-block;
+        margin: 0 5px;
+        vertical-align: middle;
+    }
+
+    .triangle-0 {
+        width: 100px;
+        height: 60px;
+        border-bottom: solid 30px $red;
+        border-right: solid 60px $red;
+        border-left: solid 60px transparent;
+        border-top: solid 30px transparent;
+        transform: rotate(180deg);
+        border-radius: 0 6px 0px;
+        margin-top: -3px;
+    }
+}
+
+
+.total {
+    position: relative;
+    margin-top: 42px;
+    font-family: $almarai_font;
+
+    @media (max-width: 992px) {
+        margin-top: 70px;
+    }
+
+    &-count {
+        width: 32%;
+        position: absolute;
+        left: 78%;
+        padding: 24px 14px 18px 14px;
+        background-color:$white ;
+        border: 1px solid $white;
+        color: $red;
+        font-weight: 700;
+        font-size: 16px;
+        height: 67px;
+        padding: 25px 0 18px;
+        box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.06);
+        border-radius: 9px;
+
+        @media (max-width: 992px) {
+            width: 60%;
+            left: 20%;
+            bottom: 82%;
+            height: 80px;
+            text-align: center;
+        }
+    }
+
+    &-places {
+        background-color: $red;
+        border-radius: 9px;
+        color: $white;
+        font-family: $almarai_font;
+
+        @media (max-width: 992px) {
+            padding-top: 40px;
+        }
+
+        &-resturants {
+            padding-inline-start: 130px;
+
+            @media (max-width: 992px) {
+                padding-inline-start: unset;
+            }
+        }
+
+        &-cars {
+            padding-inline: 10px;
+        }
+
+        &-resturants,
+        &-cars,
+        &-hotels {
+            margin-block: 10px;
+            border-right: 0.5px solid rgba(255, 255, 255, 0.36);
+            padding-inline-end: 24px;
+
+            @media (max-width: 992px) {
+                flex-direction: column;
+                padding-inline-end: unset;
+                padding-inline: 14px;
+            }
+        }
+
+        &-resturants img,
+        &-cars img,
+        &-hotels img {
+            padding: 20px 25px 6px 26px;
+        }
+
+        &-resturants p,
+        &-cars p,
+        &-hotels p {
+            font-weight: 400;
+            font-size: 20px;
+
+            @media (max-width: 992px) {
+                font-size: 18px;
+            }
+        }
+
+        &-hotels {
+            margin-inline-end: 26px;
+
+            @media (max-width: 992px) {
+                margin-inline-end: unset;
+            }
+        }
+
+    }
+}
+
+.poylgon {
+    padding-top: 62px;
+    font-family: $almarai_font;
+
+    &-text {
+        color: #909090;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 157.6%;
+    }
+}
+
+.cards {
+    &-container {
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+    }
+}

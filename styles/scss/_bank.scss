@@ -1,0 +1,200 @@
+@import './variables';
+
+.bank {
+  background-image: url('/images/crupled\ paper\ by\ freeject\ 2\ \(2\).png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  font-family: $almarai_font;
+
+  &-header {
+    position: relative;
+    margin: 130px 0 30px 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    &_header {
+      color: $balck;
+    }
+  }
+
+  &-content {
+    background-image: url('/images/dark\ bg\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 442.68px;
+    font-size: 17px;
+    line-height: 169.46%;
+    margin-top: 66px;
+
+    &-section {
+      color: $white;
+      padding-top: 82px;
+
+      &_header {
+        position: relative;
+        padding-bottom: 36px;
+        font-weight: 700;
+        font-size: 20px;
+        z-index: 2;
+      }
+    }
+  }
+
+  &-building {
+    font-family: $tajawal_font;
+
+    &-content {
+      @media (max-width: 725px) {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      &_chart {
+        margin: 50px 0 0 30px;
+        font-size: 15px;
+
+        @media (max-width: 725px) {
+          margin: 40px 0 40px 0;
+
+        }
+
+        .floor-1 {
+          background: $linear_red;
+          border-radius: 7px;
+          padding: 13px 60px;
+          color: $white;
+          margin-bottom: 10px;
+        }
+
+        .floor-two {
+          &-section {
+            border-radius: 7px;
+            background-color: $red;
+            color: $white;
+            margin: 0 2px;
+            padding: 12px;
+            text-align: center;
+
+            p:nth-child(2) {
+              padding: 20px;
+            }
+          }
+        }
+
+        .floor-3 {
+          background-color: $red;
+          padding: 13px 60px;
+          color: $white;
+          margin-top: 13px;
+          border-radius: 7px;
+
+          li {
+            list-style: none;
+            padding-top: 10px;
+          }
+        }
+      }
+
+      &_home {
+        position: relative;
+
+        .test {
+          @media (max-width: 992px) {
+            width: 100%;
+          }
+        }
+
+        &__direction {
+          position: absolute;
+
+          @media (max-width: 765px) {
+            transform: rotate(-31.56deg);
+            left: 9px;
+            top: -26px;
+            height: 70px;
+
+          }
+        }
+
+        &__direction-right {
+          position: absolute;
+          display: none;
+
+          @media (max-width: 765px) {
+            display: block;
+            top: -38px;
+            right: 19px;
+
+          }
+
+
+        }
+
+      }
+    }
+  }
+}
+
+.tab::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(65, 62, 62, 0.6);
+  border: 1px solid rgba(68, 66, 66, 0.6);
+  transform: rotate(-27.96deg);
+}
+
+.tab::after {
+  width: 56px;
+  height: 22px;
+  z-index: -1;
+}
+
+.header_bank {
+  background-color: $white;
+  border-radius: 7px;
+  border: 1px solid $white;
+  padding: 8px 14px !important;
+  color: $red;
+}
+
+.slider {
+  @media (max-width: 992px) {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  .hand-icon-right {
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  .hand-icon-up {
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &-bar {
+    li {
+      display: inline;
+      list-style: none;
+      border: 1px solid #EAEAEA;
+      padding: 8px 8px;
+      color: gray;
+      margin-inline-end: 10px;
+      background-color: #EAEAEA;
+    }
+
+    li:first-child {
+      background-color: $red;
+    }
+  }
+}

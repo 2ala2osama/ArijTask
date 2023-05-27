@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <title>Arij task</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- google font => Tajawal-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai&family=Tajawal&display=swap" rel="stylesheet">
+
+    <!-- bootstrap styles -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <div class="header d-flex">
+        <div class="header-overlay"></div>
+        <div class="header-mask"></div>
+        <div class="header-mask-left"></div>
+        <div class="container header-content">
+            <div class="header-content-image">
+                <img src="./images/header_image 2.png" alt="">
+            </div>
+            <div class="header-content-details d-flex justify-content-center align-items-center">
+                <span>عائشة الغبن</span>
+                <div class="top-tab"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar section -->
+    <div class="navbar d-flex justify-content-between align-items-center">
+        <div class="container">
+            <div class="navbar-menu-button">
+                <button onclick="openNavbar()">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+            <div class="navbar-lang">EN</div>
+            <div id="navbar" class="overlay">
+                <span href="javascript:void(0)" class="navbar-close" onclick="closeNavbar()">&times;</span>
+                <div class="overlay-content">
+                    <a href="#">
+                        <img src="./images/logo.png">
+                    </a>
+                    <a href="#"> تداخل صلاحيات </a>
+                    <a href="#"> برامج البنك المركزي </a>
+                    <a href="#"> قروض انتقائية </a>
+                    <a href="#"> الاستغناء عن الموظفين </a>
+                    <a href="#"> ايقاف غير قانوني </a>
+                    <button class="overlay-content-language">EN</button>
+                </div>
+            </div>
+            <div class="navbar-logo">
+                <img src="./images/logo.png">
+            </div>
+        </div>
+    </div>
+    <div class="content" dir="rtl">
+        <div class="container content-artical">
+            <p>
+                نيمغرم هارداغو -اًماع 15 هيف ايضمأ يذلا - امهلزنم تايركذ هتجوزو *دمحم ململ ،انوروك ةحئاج لعفب لمعلا نع
+                لطعتلا نم رهشأ
+                ةعبس دعب ةيملاعلا تاقالغإلا ببسب ةحايسلا عاطق رايهنا .ةيملاعلا ةحئاجلا نم لوألا ماعلا ةياهن يف امهتارخدم
+                عيمج اذفنتسا نأ
+                دعب ةثالثلا امهئانبأ عم (رالود تارايلم 5.7) رانيد تارايلم 4.1 نم عبرلا ىلإ ةيحايسلا هتاداريإ راسحناو
+                ة/لماع فلأ 140
+                ةبارق حيرست دهش دلب يف فيصرلا ىلع دمحم كرت .يلاتلا ماعلا يف (رالود رايلم 4.1) رانيد رايلم ىلإ 2019 يف
+            </p>
+            <p>
+                .2005 ماع كومريلا ةعماج /تاغّللا ةيلك يف جرخت ذنم نامّعب يحايس بتكم يف ةيقرتلا ملس دعصي دمحم ينيعبرألا
+                ناك "ةعجافلا "
+                تلّح نيح ،(رالود 1400) ايرهش رانيد 1000 لخدب ةيتسجوللا تايلمعلا ريدم بصنم ىلإ دمحم قلست ،ةيزيلجنإلاو
+                ،ةيلاطيإلاو
+                ،ةيسنرفلا تاغللاب احلستم .ةينهملا هتايح ةيادب (رالود 420) رانيد 300 نم ادوعص
+            </p>
+            <div class=" content-image d-flex  justify-content-center align-items-center w-100">
+                <img src="./images/about.jpeg" width="500" height="450">
+            </div>
+            <div class="content-artical d-flex flex-column justify-content-start align-items-start">
+                <div class="content-artical-head">
+                    <div class="content-tab"></div>
+                    <h4 class="content-artical-header">نقطة تحول</h4>
+                </div>
+                <p>
+                    .2005 ماع كومريلا ةعماج /تاغّللا ةيلك يف جرخت ذنم نامّعب يحايس بتكم يف ةيقرتلا ملس دعصي دمحم
+                    ينيعبرألا
+                    ناك "ةعجافلا "
+                    تلّح نيح ،(رالود 1400) ايرهش رانيد 1000 لخدب ةيتسجوللا تايلمعلا ريدم بصنم ىلإ دمحم قلست ،ةيزيلجنإلاو
+                    ،ةيلاطيإلاو
+                    ،ةيسنرفلا تاغللاب احلستم .ةينهملا هتايح ةيادب (رالود 420) رانيد 300 نم ادوعص
+                </p>
+                <p>
+                    "ةلدابتملا ةقثلا" ىلإ ةلاقتسالا هلوبق عجريف -اًماع 12 ةدّم هعم لمع يذلا -*رمع هليمز امأ .هتلاقتسا
+                    ىلع هعيقوت ببس دمحم
+                    رربي اذكه ،"ةلجاخم" .لمعلا باحصأ نيبو هنيب
+                    .2004 ماع يحايسلا داشرإلا يف سويرولاكب ىلع هلوصح ذنم يحايس بتكم يف لمعي يذلا نزي عم اضيأ تررّكت
+                    هئالمزو دمحم ةصق
+                    نيلماعلا دوقع ءاهنإو هلمع فاقيإ لمعلا ةرازو نم بتكملا بلطي نأ لبق ،حوتفم دقع نمض يحايس بتكم يف لمعلل
+                    *نزي لقتنا ،2015
+                    يف .عافدلا رماوأ ىلإ دانتسالاب ،-فظوم 25 براقيام-هيدل
+
+                </p>
+            </div>
+            <div class="content-frams d-flex justify-content-between align-items-center w-90">
+                <div class="content-fram content-fram-image-container">
+                    <div class="tab-content-before d-flex justify-content-center">
+                        <img src="/images/tap (1).png">
+                    </div>
+                    <div class="content-fram-image ">
+                        <img src="./images/6.png" class="content-img">
+                    </div>
+                    <div class="tab-content-after d-flex  justify-content-center">
+                        <img src="/images/tap (1).png">
+                    </div>
+                </div>
+                <div class="content-fram mx-5">
+                    <div class="tab-content-tarnsform d-flex justify-content-end">
+                        <img src="/images/tap (1).png">
+                    </div>
+                    <div class="content-fram-image w-100">
+                        <img src="./images/4.png" class="content-img">
+                    </div>
+                </div>
+                <div class="content-fram content-fram-image-container mx-5">
+                    <div class="tab-content-before d-flex  justify-content-center "><img src="/images/tap (1).png">
+                    </div>
+                    <div class="content-fram-image w-100">
+                        <img src="./images/4 (1).png" class="content-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background-section" dir="rtl">
+        <div class="background-section-content">
+            <div
+                class="background-section-content_text container d-flex flex-column justify-content-start align-items-start">
+                <div class="bank-content-section_header">
+                    <div class="tab"></div>
+                    <h4 class="background-section-content_text__header">تحايل بالقانون</h4>
+                </div>
+                <div class="background-section-content_text__text">
+                    <p class="desc-section">
+                        طقف ليصحتلا يفظوم نأب دجيل ةكرشلل شيتفت قيرف تلسرأ يتلا ،لمعلا ةرازو ىدل هترادإ اوكتشاف ،
+                        لمعي
+                        لّظ
+                        بتكملا نأب هئالمزو
+                        نزيل نيبت .ةلثامملا ىواكشلا تارشع رارغ ىلع ىوكشلا تقلغأ يلاتلابو .بتكملا باحصأ ريربت قفو
+                        ،"ةريصق
+                        ةرتفل"و ايلاح نولمعي نم
+
+                    </p>
+                    <p class="desc-section">يئزج جارفنا ءوض يف اهتطشنأ تفنأتسا اهنم 89 .لمعلا فاقيإ تابلطب ةيحايس ةأشنم
+                        136 تمدقت ،2021
+                        زومت
+                        /ويلوي و 2020 راذآ
+                        /سرام نيب .فاقيإلا تحت ةأشنم 47 تلّظو ،عاطقلا يف
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="background-section-desc container">
+            <div class="background-section-desc-header">
+                <div class="content-tab"></div>
+                <h4 class="background-section-desc_header"> استثناءات ايقاف العمل في المنشأة.. غير قانوني</h4>
+            </div>
+            <p class="desc-section">.فاقيإلا رارمتساب ةبغرلا لاح يف نيرهش لك ددّجتي ،لمعلا ةرازو عقوم يف اينورتكلإ ابلط
+                ةكرشلا مدقت نأ بجي
+            </p>
+            <p class="desc-section">نم 2021. ناريزح /وينوي ىتحو 2020 ناريزح /وينوي نيب يحايسلا عاطقلا يف لامع نم ىوكش
+                452,10 لمعلا ةرازو تقلت
+                ،حيرستلا عقو
+                ىلع .قدانفلاو ،يحايسلا لقنلاو ،معاطملا يف ىوكش 4913 اهنيب
+            </p>
+        </div>
+        <div class="background-section-steper">
+            <div class="container">
+                <div class="note-section d-flex justify-content-start align-items-center">
+                    <span class="note-section__text">اسحب الى اليمين لتنقل بين الشكاوي</span>
+                    <img class="note-section__image" src="./images/Hand Right.png">
+                </div>
+            </div>
+            <div class="background-section-steper__steps">
+                <div class="md-stepper-horizontal">
+                    <div class="md-step">
+                        <div class="md-step-circle d-flex justify-content-center align-items-center"><span>03</span>
+                        </div>
+                    </div>
+                    <div class="md-step ">
+                        <div class="md-step-circle d-flex justify-content-center align-items-center"><span>02</span>
+                        </div>
+
+                    </div>
+                    <div class="md-step active ">
+                        <div class="md-step-circle d-flex flex-column justify-content-center align-items-center">
+                            <p>01</p>
+                            <p>نوع الشكوى</p>
+                        </div>
+
+                    </div>
+                    <div class="md-step ">
+                        <div class="md-step-circle d-flex justify-content-center align-items-center"><span>04</span>
+                        </div>
+                    </div>
+                    <div class="md-step">
+                        <div class="md-step-circle d-flex justify-content-center align-items-center"><span>05</span>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+            </div>
+        </div>
+        <div class="cards conatiner">
+            <div class="container cards-container d-flex justify-content-between align-items-center">
+                <div class="box-triangle">
+                    <div class="box-1 d-flex justify-content-center align-items-center">إجباري على تقديم إجازة بدون راتب
+                    </div>
+                    <div class="box-2 d-flex justify-content-between align-items-center">
+                        <div class="box-2-content d-flex flex-column justify-content-center align-items-center">
+                            <div class="box-2-content_icons">
+                                <img src="./images/Vector.png">
+                            </div>
+                            <div class="box-2-content_text">مطاعم</div>
+                            <div class="box-2-content_number">5</div>
+                        </div>
+                        <div class="box-2-content d-flex flex-column justify-content-center align-items-center">
+                            <div class="box-2-content_icons">
+                                <img src="./images/Vector (1).png">
+                            </div>
+                            <div class="box-2-content_text">نقل سياحي</div>
+                            <div class="box-2-content_number">67</div>
+                        </div>
+                        <div class="box-2-content d-flex flex-column justify-content-center align-items-center">
+                            <div class="box-2-content_icons">
+                                <img src="./images/Vector (2).png">
+                            </div>
+                            <div class="box-2-content_text">فنادق</div>
+                            <div class="box-2-content_number">84</div>
+                        </div>
+                    </div>
+                    <div class="triangle triangle-0"></div>
+                </div>
+                <div class="box-triangle">
+                    <div class="box-1 d-flex justify-content-center align-items-center">تقديم إجازة إجباري</div>
+                    <div class="box-2 d-flex justify-content-between align-items-center">
+                        <div class="box-2 d-flex justify-content-between align-items-center">
+                            <div class="box-2-content d-flex flex-column justify-content-center align-items-center">
+                                <div class="box-2-content_icons">
+                                    <img src="./images/Vector.png">
+                                </div>
+                                <div class="box-2-content_text">مطاعم</div>
+                                <div class="box-2-content_number">5</div>
+                            </div>
+                            <div class="box-2-content d-flex flex-column justify-content-center align-items-center">
+                                <div class="box-2-content_icons">
+                                    <img src="./images/Vector (1).png">
+                                </div>
+                                <div class="box-2-content_text">نقل سياحي</div>
+                                <div class="box-2-content_number">87</div>
+                            </div>
+                            <div class="box-2-content d-flex flex-column justify-content-center align-items-center">
+                                <div class="box-2-content_icons">
+                                    <img src="./images/Vector (2).png">
+                                </div>
+                                <div class="box-2-content_text">فنادق</div>
+                                <div class="box-2-content_number">4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="triangle triangle-0"></div>
+                </div>
+                <div class="box-triangle">
+                    <div class="box-1 d-flex justify-content-center align-items-center"> على إجراء إعتراض</div>
+                    <div class="box-2 d-flex justify-content-between align-items-center">
+                        <div class="box-2 d-flex justify-content-between align-items-center">
+                            <div class="box-2-content d-flex flex-column justify-content-center align-items-center">
+                                <div class="box-2-content_icons">
+                                    <img src="./images/Vector.png">
+                                </div>
+                                <div class="box-2-content_text">مطاعم</div>
+                                <div class="box-2-content_number">5</div>
+                            </div>
+                            <div class="box-2-content d-flex flex-column justify-content-center align-items-center">
+                                <div class="box-2-content_icons">
+                                    <img src="./images/Vector (1).png">
+                                </div>
+                                <div class="box-2-content_text">نقل سياحي</div>
+                                <div class="box-2-content_number">57</div>
+                            </div>
+                            <div class="box-2-content d-flex flex-column justify-content-center align-items-center">
+                                <div class="box-2-content_icons">
+                                    <img src="./images/Vector (2).png">
+                                </div>
+                                <div class="box-2-content_text">فنادق</div>
+                                <div class="box-2-content_number">14</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="triangle triangle-0"></div>
+                </div>
+                <div class="box-triangle">
+                    <div class="box-1 d-flex justify-content-center align-items-center"> إنجازات</div>
+                    <div class="box-2 d-flex justify-content-between align-items-center">
+
+                        <div class="box-2 d-flex justify-content-between align-items-center">
+                            <div class="box-2-content d-flex flex-column justify-content-center align-items-center">
+                                <div class="box-2-content_icons">
+                                    <img src="./images/Vector.png">
+                                </div>
+                                <div class="box-2-content_text">مطاعم</div>
+                                <div class="box-2-content_number">5</div>
+                            </div>
+                            <div class="box-2-content d-flex flex-column justify-content-center align-items-center">
+                                <div class="box-2-content_icons">
+                                    <img src="./images/Vector (1).png">
+                                </div>
+                                <div class="box-2-content_text">نقل سياحي</div>
+                                <div class="box-2-content_number">67</div>
+                            </div>
+                            <div class="box-2-content d-flex flex-column justify-content-center align-items-center">
+                                <div class="box-2-content_icons">
+                                    <img src="./images/Vector (2).png">
+                                </div>
+                                <div class="box-2-content_text">فنادق</div>
+                                <div class="box-2-content_number">84</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="triangle triangle-0"></div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl" class="d-flex justify-content-center align-items-center">
+            <div class="total d-flex  justify-content-center align-items-center">
+                <div class="total-count d-flex  justify-content-center align-items-center"> مجموع الكلي (4567)</div>
+                <div class=" total-places d-flex justify-content-center align-items-center">
+                    <div class="total-places-resturants d-flex align-items-center justify-content-center">
+                        <div class="d-flex flex-column  align-items-center">
+                            <img src="./images/Vector.png">
+                            <p>مطاعم</p>
+                        </div>
+                        <p>2849</p>
+
+                    </div>
+                    <div class="total-places-cars justify-content-center align-items-center d-flex">
+                        <div class="d-flex flex-column  align-items-center">
+                            <img src="./images/Vector (1).png">
+                            <p> نقل سياحي</p>
+                        </div>
+                        <p>2729</p>
+                    </div>
+                    <div class="total-places-hotels d-flex align-items-center justify-content-center">
+                        <div class="d-flex flex-column  align-items-center">
+                            <img src="./images/Vector (2).png">
+                            <p> فنادق</p>
+                        </div>
+                        <p>2389</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl" class="container d-flex justify-content-center align-items-center description">
+            <p class="desc-section">
+                لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك
+                التفاصيل لتكتشف
+                حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،
+                الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة
+                الظروف الأليمة،
+            </p>
+        </div>
+    </div>
+
+    <div dir="rtl" class="partion d-flex flex-column">
+        <div class="container ">
+            <div class="partion-text d-flex flex-column justify-content-start align-items-start">
+                <div class="partion-text-header">
+                    <div class="content-tab"></div>
+                    <h4 class="content-artical-header"> استثناءات غير قانونية</h4>
+                </div>
+                <p class="desc-section">
+                    ولكن بفضل هؤللكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت
+                    بالفعل، وسأعرض لك
+                    التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،اء
+                    الأشخاص .
+                </p>
+                <p class="desc-section">
+                    و سأعرض مثال حي لهذا، من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه
+                    الحق أن ينتقد شخص
+                    ما أراد أن يشعر بالسعادة التي لا تشوبها عواقب أليمة أو آخر أراد أن يتجنب الألم الذي ربما تنجم عنه
+                    بعض
+                    المتعة ؟
+                    علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما
+                    يعقبها من الألم
+
+                </p>
+                <p class="desc-section">
+                    والأسي المحتم، واللوم كذلك يشمل هؤلاء الذين أخفقوا في واجباتهم نتيجة لضعف
+                    إرادتهم فيتساوي مع هؤلاء
+                    الذين
+                    يتجنبون وينأون
+                    عن تحمل الكدح والألم
+                    علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما
+                    يعقبها من الألم
+                    .
+                </p>
+            </div>
+            <div class="partion-button d-flex  justify-content-center align-items-center">
+                <button class="partion-button_button d-flex  justify-content-center align-items-center">
+                    <div class="partion-button_button__icon">
+                        <img src="./images/Vector (3).png">
+                    </div>
+                    <a> رقم الدفاع (6) لسنة 2020 الصادق بمقتضى قانون الدفاع (13) لسنة 1992</a>
+                </button>
+            </div>
+            <div class="partion-description d-flex  flex-column justify-content-start align-items-start">
+                <div class="partion-text-header">
+                    <div class="content-tab"></div>
+                    <h4 class="content-artical-header"> تداخل الصلاحيات و ضبابيتها </h4>
+                </div>
+                <p class="desc-section">ولكن بفضل هؤللكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة
+                    وتمجيد الألم نشأت
+                    بالفعل، وسأعرض لك
+                    التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،اء
+                    الأشخاص الذين لا
+                    يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة،
+                    وأكرر بأنه لا يوجد
+                    من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد .</p>
+            </div>
+            <div class="partion-image d-flex flex-column justify-content-center align-items-center">
+                <div class="partion-image_img d-flex flex-column justify-content-center align-items-center">
+                    <div class="partion-image-content  d-flex flex-column justify-content-around align-items-center">
+                        <img src="./images/jor.png">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <p class="desc-section">تقضي بإنشاء مركز وطني للأمن وإدارة الازمات، وجرى تكليف الأمير علي بن
+                                الحسين عام 2008
+                                ليكون
+                                مشرفًا
+                                عامًا على جميع مراحل
+                                إنشاء المركز، في العام 2013 أنتهى العمل ببناء المقر الدائم للمركز، وخلال العام 2015 صدرت
+                                الإرادة
+                                الملكية بالمصادقة على
+                                نظام المركز الوطني للأمن وإدارة الأزمات رقم (20) لعام 2015،</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="partion-petra d-flex  justify-content-start align-items-center">
+            <div class="container partion-petra-text">
+                <p class="desc-section">
+                    ولكن بفضل هؤللكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت
+                    بالفعل، وسأعرض لك
+                    التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،اء
+                    الأشخاص الذين لا
+                    يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة
+                </p>
+                <p class="desc-section">بناء على ذالك , يرى المحامي معاذ المومني
+                    <span class="red-text">" خطاء في اوامر الدفاع"</span>
+                    سمح بوقوع هذه التجاوزات
+                </p>
+                <p class="desc-section">
+                    ولكن بفضل هؤللكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت
+                    بالفعل، وسأعرض لك
+                    التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،اء
+                    الأشخاص الذين لا
+                    يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة،
+                    وأكرر بأنه لا يوجد
+                    من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما
+                    نتحمله من كد وأسي.
+                </p>
+                <p class="desc-section">
+                    <b>رئاسة الوزراء</b>
+
+                    ترفض التعليق على المومني ولكن بفضل هؤللكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار
+                    النشوة وتمجيد الألم نشأت بالفعل،
+                    السعاده فيما نتحمله من كد وأسي.
+                </p>
+                <p class="desc-section">ترفض التعليق على المومني ولكن بفضل هؤللكن لا بد أن أوضح لك أن كل هذه الأفكار
+                    المغلوطة حول استنكار
+                    النشوة وتمجيد الألم نشأت بالفعل،
+                    السعاده فيما نتحمله من كد وأسي.</p>
+                <p class="desc-section">
+                    في ربيع 2020 ،أطلق الضمان برنامج "الاستدامة" التي استفادت منه
+                    <img src="./images/Group.png">
+                    894 منشأة ، <img src="./images/Group (1).png">
+                    عاملا بما قيمته
+                    ، <img src="./images/Group (2).png">خمسة عشرة مليون و 667 الف دينار
+                </p>
+                <p class="desc-section">
+                    ولكن بفضل هؤللكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت
+                    بالفعل، وسأعرض لك
+                    التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،اء
+                    الأشخاص الذين لا
+                    يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة،
+                    وأكرر بأنه لا يوجد
+                    من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما
+                    نتحمله من كد وأسي.
+
+                </p>
+                <p class="desc-section"> أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت بالفعل.
+                </p>
+            </div>
+        </div>
+        <div class="poylgon container">
+            <p class="poylgon-text"><img src="./images/Hand Right (1).png"> اضغط على الشكل لأظهار البرنامج</p>
+        </div>
+        <div class="py-5" dir="ltr">
+            <div class="container">
+                <div class="hexagon-container hexagon-container-lg d-flex justify-content-center align-items-center">
+                    <div class="hexagon-sec hexagon-reflect-odd ">
+                        <div class="hexagon"></div>
+                        <div class="hexagon hexagon-clickable d-flex justify-content-center align-items-center"
+                            onclick="flipHexagon('hexagon-1')" id="hexagon-1">
+                            <div class="hexagon--small d-flex justify-content-center align-items-center">
+                                <span class="material-symbols-outlined">domain</span>
+                            </div>
+                            <div class="hexagon--number">948</div>
+                            <div class="hexagon--text">منشآة</div>
+                            <div class="hexagon--details justify-content-center align-items-center">
+                                ةيحايسلا تآشنملا ةمادتسا جمانرب نم ةديفتسملا
+                            </div>
+                        </div>
+                        <div class="hexagon"></div>
+                    </div>
+                    <div class="hexagon-sec hexagon-reflect-even">
+                        <div class="hexagon hexagon-clickable d-flex justify-content-center align-items-center"
+                            onclick="flipHexagon('hexagon-2')" id="hexagon-2">
+                            <div class="hexagon--small d-flex justify-content-center align-items-center">
+                                <span class="material-symbols-outlined">domain</span>
+                            </div>
+                            <div class="hexagon--number">19003</div>
+                            <div class="hexagon--text">عامل</div>
+                            <div class="hexagon--details justify-content-center align-items-center">
+                                ةيحايسلا تآشنملا  ةمادتسا جمانرب نم ةديفتسملا
+                            </div>
+                        </div>
+                        <div class="hexagon"></div>
+                    </div>
+                    <div class="hexagon-sec hexagon-reflect-center">
+                        <div class="hexagon"></div>
+                        <div class="hexagon hexagon-clickable d-flex justify-content-center align-items-center"
+                            onclick="flipHexagon('hexagon-3')" id="hexagon-3">
+                            <div class="hexagon--small d-flex justify-content-center align-items-center">
+                                <span class="material-symbols-outlined">domain</span>
+                            </div>
+                            <div class="hexagon--number">17956</div>
+                            <div class="hexagon--text">عامل</div>
+                            <div class="hexagon--details justify-content-center align-items-center">
+                                ةيحايسلا تآشنملا  ةمادتسا جمانرب نم ةديفتسملا
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hexagon-sec hexagon-reflect-even">
+                        <div class="hexagon hexagon-clickable d-flex justify-content-center align-items-center"
+                            onclick="flipHexagon('hexagon-4')" id="hexagon-4">
+                            <div class="hexagon--small d-flex justify-content-center align-items-center">
+                                <span class="material-symbols-outlined">domain</span>
+                            </div>
+                            <div class="hexagon--number">256</div>
+                            <div class="hexagon--text">منشآة</div>
+                            <div class="hexagon--details justify-content-center align-items-center">
+                                ةيحايسلا تآشنملا  ةمادتسا جمانرب نم ةديفتسملا
+                            </div>
+                        </div>
+                        <div class="hexagon"></div>
+                    </div>
+                    <div class="hexagon-sec hexagon-reflect-odd">
+                        <div class="hexagon"></div>
+                        <div class="hexagon hexagon-clickable d-flex justify-content-center align-items-center"
+                            onclick="flipHexagon('hexagon-5')" id="hexagon-5">
+                            <div class="hexagon--small d-flex justify-content-center align-items-center">
+                                <span class="material-symbols-outlined">domain</span>
+                            </div>
+                            <div class="hexagon--number">800</div>
+                            <div class="hexagon--text">منشآة</div>
+                            <div class="hexagon--details justify-content-center align-items-center">
+                                ةيحايسلا تآشنملا  ةمادتسا جمانرب نم ةديفتسملا
+                            </div>
+                        </div>
+                        <div class="hexagon"></div>
+                    </div>
+                </div>
+                <div class="hexagon-container hexagon-container-sm d-flex justify-content-center align-items-center">
+                    <div>
+                        <div class="hexagon-sec hexagon-reflect-top">
+                            <div class="hexagon"></div>
+                            <div class="hexagon hexagon-clickable d-flex justify-content-center align-items-center"
+                                onclick="flipHexagon('hexagon_1')" id="hexagon_1">
+                                <div class="hexagon--small d-flex justify-content-center align-items-center">
+                                    <span class="material-symbols-outlined">domain</span>
+                                </div>
+                                <div class="hexagon--number">948</div>
+                                <div class="hexagon--text">منشآة</div>
+                                <div class="hexagon--details justify-content-center align-items-center">
+                                    ةيحايسلا تآشنملا  ةمادتسا جمانرب نم ةديفتسملا
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hexagon-sec hexagon-reflect-bottom">
+                            <div class="hexagon hexagon-clickable d-flex justify-content-center align-items-center"
+                                onclick="flipHexagon('hexagon_2')" id="hexagon_2">
+                                <div class="hexagon--small d-flex justify-content-center align-items-center">
+                                    <span class="material-symbols-outlined">domain</span>
+                                </div>
+                                <div class="hexagon--number">800</div>
+                                <div class="hexagon--text">عامل</div>
+                                <div class="hexagon--details justify-content-center align-items-center">
+                                    ةيحايسلا تآشنملا  ةمادتسا جمانرب نم ةديفتسملا
+                                </div>
+                            </div>
+                            <div class="hexagon"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="hexagon-sec">
+                            <div class="hexagon hexagon-clickable d-flex justify-content-center align-items-center"
+                                onclick="flipHexagon('hexagon_3')" id="hexagon_3">
+                                <div class="hexagon--small d-flex justify-content-center align-items-center">
+                                    <span class="material-symbols-outlined">domain</span>
+                                </div>
+                                <div class="hexagon--number">17956</div>
+                                <div class="hexagon--text">منشآة</div>
+                                <div class="hexagon--details justify-content-center align-items-center">
+                                    ةيحايسلا تآشنملا  ةمادتسا جمانرب نم ةديفتسملا
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hexagon-sec">
+                            <div class="hexagon hexagon-clickable d-flex justify-content-center align-items-center"
+                                onclick="flipHexagon('hexagon_4')" id="hexagon_4">
+                                <div class="hexagon--small d-flex justify-content-center align-items-center">
+                                    <span class="material-symbols-outlined">domain</span>
+                                </div>
+                                <div class="hexagon--number">19003</div>
+                                <div class="hexagon--text">عامل</div>
+                                <div class="hexagon--details justify-content-center align-items-center">
+                                    ةيحايسلا تآشنملا  ةمادتسا جمانرب نم ةديفتسملا
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hexagon-sec">
+                            <div class="hexagon hexagon-clickable d-flex justify-content-center align-items-center"
+                                onclick="flipHexagon('hexagon_5')" id="hexagon_5">
+                                <div class="hexagon--small d-flex justify-content-center align-items-center">
+                                    <span class="material-symbols-outlined">domain</span>
+                                </div>
+                                <div class="hexagon--number">256</div>
+                                <div class="hexagon--text">منشآة</div>
+                                <div class="hexagon--details justify-content-center align-items-center">
+                                    ةيحايسلا تآشنملا  ةمادتسا جمانرب نم ةديفتسملا
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="partion-content container d-flex flex-column justify-content-start align-items-center">
+            <p class="desc-section"> دانا* ( 23 عام) عملت في قطاع سياحي
+                ولكن بفضل هؤللكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت
+                بالفعل، وسأعرض لك
+                التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،اء
+                الأشخاص الذين لا
+                يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة،
+                وأكرر بأنه لا يوجد
+                ولكن بفضل هؤللكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة التفاصيل لتكتشف حقيقة
+                وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،اء من يرغب في الحب ونيل المنال
+                ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.
+                .
+            </p>
+            <p class="desc-section">ولكن بفضل هؤللكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة
+                وتمجيد الألم نشأت بالفعل،
+                وسأعرض لك
+                التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،اء
+                الأشخاص الذين لا
+                يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة،
+                وأكرر بأنه لا يوجد
+                من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما
+                نتحمله من كد وأسي لمواجهة الظروف الأليمة،
+                وأكرر بأنه لا يوجد.</p>
+        </div>
+
+        <div class="partion-artical d-flex flex-column justify-content-center align-items-center">
+            <div class="partion-artical-img d-flex flex-column justify-content-center align-items-center">
+                <div class="partion-artical-content  d-flex flex-column justify-content-around align-items-center">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <h4> نص المادة 4:</h4>
+                        <div>
+                            <p class="desc-section">
+                                يتم تجديد العقد محدد المدة بموجب هذه البلاغ للعمل الاردني التلقائي بموجب هذا البلاغ
+                                وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة
+                                لظروف ما قد تكمن السعاده
+                                فيما
+                                لشروط الاتية:
+                            </p>
+                            <div class="desc-section">
+                                1- أن يكون العقد انتهت مدته 30/4/2020 و ما بعدها
+                            </div>
+                            <div class="desc-section">
+                                2-ان يكون العقد قد تم تجديدة ثلاث مرات فأكثر
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="partion-content container d-flex flex-column justify-content-start align-items-center">
+            <p class="desc-section"> سليم * الذي يمتلك مكتب سياحي
+                ولكن بفضل هؤللكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت
+                بالفعل، وسأعرض لك
+                التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة.
+            </p>
+            <p class="desc-section">
+                الأشخاص الذين لا
+                يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة،
+                وأكرر بأنه لا يوجد
+                ولكن بفضل هؤللكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة التفاصيل لتكتشف حقيقة
+                وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،اء من يرغب في الحب ونيل المنال
+                ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.
+                .
+            </p>
+            <p class="desc-section">ولكن بفضل هؤللكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة
+                وتمجيد الألم نشأت بالفعل،
+                وسأعرض لك
+                التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،اء
+                الأشخاص .</p>
+        </div>
+    </div>
+
+    <div dir="rtl" class="bank">
+        <div class="partion-button d-flex  justify-content-center align-items-center">
+            <button class="partion-button_button d-flex  justify-content-center align-items-center">
+                <div class="partion-button_button__icon">
+                    <img src="./images/Vector (3).png">
+                </div>
+                <a> مكاتب السياحية تغلق ابوابها تباعا</a>
+            </button>
+        </div>
+        <div class="partion-description container">
+            <div class="bank-section-header">
+                <div class="tab"></div>
+                <h4 class="bank-section-header_header">"قليل يدوم خيرا من كثير منقطع"
+                </h4>
+            </div>
+
+            <p>ولكن بفضل هؤللكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت
+                بالفعل، وسأعرض لك
+                التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،اء
+                الأشخاص الذين لا
+            </p>
+            <p>يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة،
+                وأكرر بأنه لا يوجد
+                من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد .</p>
+        </div>
+
+        <div class="bank-content d-flex justify-content-start align-items-start">
+            <div class="bank-content-section container">
+                <div class="bank-content-section_header">
+                    <div class="tab"></div>
+                    <h4 class="bank-section_header">قروض بعيدة المنال و برامج أنتقائية</h4>
+                </div>
+
+                <p>
+                    ولكن بفضل هؤللكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت
+                    بالفعل، وسأعرض لك
+                    التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،اء
+                    الأشخاص الذين لا
+                    يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة،
+                    وأكرر بأنه لا يوجد
+                    من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما
+                    نتحمله من كد وأسي.
+
+                </p>
+                <p>
+                    سأعرض مثال حي لهذا، من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه
+                    الحق أن ينتقد شخص ما
+                    أراد أن يشعر بالسعادة التي لا تشوبها عواقب أليمة أو آخر أراد أن يتجنب الألم الذي ربما تنجم عنه بعض
+                    المتعة ؟
+                    علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما
+                    يعقبها من الألم
+                    والأسي المحتم، واللوم كذلك يشمل هؤلاء الذين أخفقوا في واجباتهم نتيجة لضعف إرادتهم فيتساوي مع هؤلاء
+                    الذين يتجنبون وينأون
+                    عن تحمل الكدح والألم
+                </p>
+            </div>
+
+        </div>
+
+        <div class="bank-building container ">
+            <div class="d-flex justify-content-center align-items-end">
+                <div class="d-flex bank-building-content  justify-content-between align-items-center">
+                    <div class="bank-building-content_chart">
+                        <div>
+                            <div class="floor-1 d-flex justify-content-center align-items-center">
+                                <img src="/images/time.png"> 25/3/5
+                            </div>
+                            <div class=" floor-two d-flex  justify-content-center align-items-center">
+                                <div
+                                    class="floor-two-section d-flex  flex-column justify-content-center align-items-center">
+                                    <p class="header_bank ">سقف التمويل</p>
+                                    <p>هؤلاء الذين يتجنبون وينأون عن تحمل الكدح والألم</p>
+                                </div>
+                                <div
+                                    class="floor-two-section  d-flex flex-column  justify-content-center align-items-center">
+                                    <p class="header_bank ">اسم البرنامج</p>
+                                    <p class="text-center">هؤلاء الذين يتجنبون وينأون عن تحمل الكدح والألم</p>
+                                </div>
+                            </div>
+                            <div class=" floor-3 d-flex flex-column justify-content-center align-items-center">
+                                <p class="header_bank">وصف البرنامج</p>
+                                <div>
+                                    <p>يتم تجديد العقد محدد المدة بموجب هذه البلاغ للعمل الاردني التلقائي بموجب هذا
+                                        البلاغ
+                                        وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام،</p>
+                                    <li>- كلفة التمويل ميسرة لا تتجاوز 2%
+                                    </li>
+                                    <li>- ضامن مرتفع للديون 85% لتشجيع البنوك على تمويل الشركات
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start align-items-start">
+                            <b>ملاحظات:</b>
+                            <p>الفئات المستهدفة11 قطاع من ضمانها 250 الف دينار للخدمات الساحية عدا الفنادق 1 مليون
+                                للفنادق و
+                                1 مليون للنقل"</p>
+                        </div>
+                    </div>
+                    <div class="bank-building-content_home">
+
+                        <img class="bank-building-content_home__direction" src="./images/Path 26.png">
+                        <img class="bank-building-content_home__direction-right" src="./images/Path 26 (1).png">
+                        <img class="test" src="./images/Group 34.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-5 slider d-flex  justify-content-center align-items-center">
+                <div class="slider-bar d-flex  justify-content-between align-items-center">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class=" mt-3 d-flex  justify-content-between align-items-center">
+                    <p class="poylgon-text">
+                        <img src="./images/Hand Right (3).png" class="hand-icon-up">
+                        <img src="./images/Hand Right (2).png" class="hand-icon-right">اضغط هنا للانتقال الى البرنامج
+                        التالي
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="d-flex flex-column justify-content-start align-items-start container">
+            <p><b>يزن</b> لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت بالفعل،
+                وسأعرض لك التفاصيل لتكتشف حقيقة
+                وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،اء الأشخاص الذين لا يدركون بأن
+                السعادة لا بد أن
+                نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في
+                الحب ونيل المنال
+                ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.</p>
+            <p><b>دانا</b> لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت بالفعل،
+                وسأعرض لك التفاصيل لتكتشف حقيقة
+                وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،اء الأشخاص الذين لا يدركون بأن
+                السعادة </p>
+            <p>اما <b>محمد </b>لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت بالفعل،
+                وسأعرض لك التفاصيل لتكتشف حقيقة
+                وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،اء الأشخاص الذين لا يدركون بأن
+                السعادة لا بد أن
+                نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في
+                الحب ونيل المنال
+                ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي. </p>
+
+
+            <p>*أسم مستعار للحفاظ على سرية الموظفين</p>
+        </div>
+
+    </div>
+
+    <!-- bootstrap script -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- JS code -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

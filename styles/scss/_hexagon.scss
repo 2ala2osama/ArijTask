@@ -1,0 +1,157 @@
+@import "./variables";
+
+.hexagon {
+  width: 145px;
+  height: 180px;
+  background: $linear_red;
+  transform: rotate(89deg);
+
+  @media (max-width:320px) {
+    width: 140px;
+    height: 170px;
+
+  }
+
+  &,
+  &--small {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: 0.7s;
+  }
+
+  &--small {
+    width: 40px;
+    height: 50px;
+    background: $white;
+    transform: rotate(0);
+
+    span {
+      color: $red;
+      transform: rotate(270deg);
+    }
+  }
+
+  &--number,
+  &--text,
+  &--details {
+    transform: rotate(270deg);
+    color: $white;
+  }
+
+  &--number {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &--details {
+    display: none;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  &-clickable {
+    cursor: pointer;
+  }
+
+  &-container {
+    &-lg {
+      @media (max-width: 992px) {
+        display: none !important;
+      }
+
+      .hexagon-sec:nth-child(odd) {
+        margin-top: 13%;
+      }
+    }
+
+    &-sm {
+      @media (min-width: 993px) {
+        display: none !important;
+      }
+    }
+  }
+
+  &-reflect {
+
+    &-odd,
+    &-center,
+    &-even,
+    &-top,
+    &-bottom {
+      position: relative;
+    }
+
+    &-even> :last-child,
+    &-center> :first-child,
+    &-top> :first-child,
+    &-bottom> :last-child {
+      left: 0;
+      width: 145px;
+      height: 180px;
+      position: absolute;
+      background: #EDEDED;
+    }
+
+    &-center {
+      &> :first-child {
+        bottom: 86%;
+        right: 0;
+      }
+    }
+
+    &-top> :first-child {
+      bottom: 85%;
+    }
+
+    &-bottom> :last-child {
+      top: 85%;
+    }
+
+    &-even {
+      &> :last-child {
+        top: 82%;
+      }
+    }
+
+    &-odd {
+
+      &> :first-child,
+      &> :last-child {
+        width: 70px;
+        height: 90px;
+        position: absolute;
+        background: #EDEDED;
+      }
+
+      &> :first-child {
+        bottom: 88%;
+        right: 11%;
+      }
+
+      &> :last-child {
+        top: 88%;
+        right: 9%;
+      }
+
+      &:last-of-type {
+
+        &> :last-child,
+        &> :first-child {
+          left: 9%;
+        }
+      }
+    }
+  }
+}
+
+.flip {
+  .hexagon--details {
+    display: flex;
+  }
+
+  .hexagon--number,
+  .hexagon--small,
+  .hexagon--text {
+    display: none !important;
+  }
+}

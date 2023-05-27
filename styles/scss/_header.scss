@@ -1,0 +1,137 @@
+@import "./variables";
+
+.header {
+  background-color: $red;
+  height: 100vh;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/Rectangle\ 35\ \(6\).png");
+  position: relative;
+
+  &-overlay {
+    background: rgba(28, 26, 26, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &-mask {
+    background-image: url("../images/Mask\ Group.png");
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+
+    @media (max-width: 525px) {
+      width: 100%;
+      height: 33.3%;
+    }
+
+    &-left {
+      background-image: url("../images/Mask\ Group\ \(5\).png");
+      top: 0;
+      left: 85%;
+      width: 15%;
+      height: 100%;
+      position: absolute;
+      z-index: 2;
+
+      @media (max-width: 525px) {
+        width: 100%;
+        height: 33.3%;
+        top: unset;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  &-content {
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+
+    @media (max-width: 525px) {
+      align-items: center;
+    }
+
+    &-details,
+    &-image {
+      width: 55%;
+
+      @media (min-width: 701px) and (max-width: 992px) {
+        width: 80%;
+      }
+
+      @media (max-width: 700px) {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-details {
+      position: relative;
+      margin-top: 16px;
+
+      span {
+        background: rgba(160, 5, 27, 0.79);
+        border: 1px solid $red;
+        padding: 20px 40px 14px 40px;
+        text-align: center;
+        color: $white;
+        font-family: $tajawal_font;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+      }
+
+      .top-tab {
+        position: absolute;
+        width: 30%;
+
+        @media (max-width: 525px) {
+          width: 65%;
+        }
+
+        &::before {
+          width: 40%;
+          height: 4vmin;
+          right: -18%;
+          top: 12px;
+
+          @media (max-width: 525px) {
+            height: 5vmin;
+            top: 10px;
+            right: -7%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.content-tab::after,
+.top-tab::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(65, 62, 62, 0.6);
+  border: 1px solid rgba(68, 66, 66, 0.6);
+  transform: rotate(-27.96deg);
+}
+
+.content-tab::after {
+  width: 50px;
+  height: 20px;
+}
